@@ -9,15 +9,18 @@ class HomePage extends StatelessWidget {
   String name = "Perceptron";
   @override
   Widget build(BuildContext context) {
+    final dummyList = List.generate(50, (index) => CatalogModel.items[0]);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.green,
         title: Text("Catalog App"),
       ),
       body: ListView.builder(
-        itemCount: CatalogModel.items.length,
+        itemCount: dummyList.length,
         itemBuilder: (context, index) {
-          return ItemWidget(item: CatalogModel.items[index],);
+          return ItemWidget(
+            item: dummyList[index],
+          );
         },
       ),
       drawer: MyDrawer(),
