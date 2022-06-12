@@ -9,7 +9,7 @@ class MyDrawer extends StatelessWidget {
 
     return Drawer(
       child: Container(
-        color: Color.fromARGB(255, 244, 255, 231),
+        color: Color.fromARGB(255, 255, 255, 255),
         child: ListView(
           padding: EdgeInsets.zero,
           children: [
@@ -17,8 +17,7 @@ class MyDrawer extends StatelessWidget {
               padding: EdgeInsets.zero,
               child: UserAccountsDrawerHeader(
                 margin: EdgeInsets.zero,
-                decoration:
-                    BoxDecoration(color: Color.fromARGB(255, 19, 165, 0)),
+                decoration: BoxDecoration(color: Color.fromARGB(255, 0, 0, 0)),
                 accountName: Text("Atharva Joshi"),
                 accountEmail: Text("atharva.joshi@gmail.com"),
                 currentAccountPicture: CircleAvatar(
