@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_unnecessary_containers
 
 import 'dart:ffi';
+import 'dart:html';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -46,11 +47,56 @@ class _HomePageState extends State<HomePage> {
       child: Container(
         padding: Vx.m32,
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            "Catalog App".text.xl4.make(),
+            CatalogHeader(),
+            if (CatalogModel.items != null && CatalogModel.items.isNotEmpty)
+              CatalogList().expand()
+            else
+              Center(
+                child: CircularProgressIndicator(),
+              )
           ],
         ),
       ),
     ));
+  }
+}
+
+class CatalogHeader extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        "Know Farming".text.xl4.bold.color(Colors.green).make(),
+        "Todays's Rates".text.xl2.make(),
+      ],
+    );
+  }
+}
+
+class CatalogList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ListView.builder(
+      shrinkWrap: true,
+      itemCount: CatalogModel.items.length,
+      itemBuilder: (context, index) {
+        final catalog = CatalogModel.items[index];
+        return CatalogItem(catalog: catalog);
+      },
+    );
+  }
+}
+
+class CatalogItem extends StatelessWidget {
+  final Item catalog;
+  const CatalogItem({Key? key, required this.catalog})
+      : assert(catalog != Null),
+        super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return VxBox().white.square(100).make();
   }
 }
