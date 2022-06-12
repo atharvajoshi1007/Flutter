@@ -1,0 +1,93 @@
+{
+
+    "products":[
+        {
+            "id":1,
+            "name":"Coriander",
+            "price":15,
+            "color":"green",
+            "image":"https://static.bangkokpost.com/media/content/20200804/c1_1962403_200804063900.jpg"
+
+
+        },
+        {
+            "id":2,
+            "name":"Palak",
+            "price":15,
+            "color":"green",
+            "image":"https://m.media-amazon.com/images/I/614qXa80KDL._SL1000_.jpg"
+
+
+        },
+        {
+            "id":3,
+            "name":"Methi",
+            "price":15,
+            "color":"green",
+            "image":"https://www.ngroceries.com/wp-content/uploads/2021/12/1297-11-800x800-1.jpg"
+
+
+        },
+        {
+            "id":4,
+            "name":"Tomato",
+            "price":30,
+            "color":"red",
+            "image":"http://www.fresh-square.com/wp-content/uploads/2016/10/Cherry-Tomato-768x514.jpg"
+        },
+        {
+            "id":5,
+            "name":"Potato",
+            "price":25,
+            "color":"yellow",
+            "image":"https://5.imimg.com/data5/GT/VP/MY-35646407/fresh-potatoes-500x500.jpg"
+
+
+        },
+        {
+            "id":6,
+            "name":"Onion",
+            "price":35,
+            "color":"Purple",
+            "image":"https://groceryboy.in/wp-content/uploads/2021/09/onion-2.jpg"
+
+
+        },
+        {
+            "id":7,
+            "name":"Pudina",
+            "price":20,
+            "color":"green",
+            "image":"https://5.imimg.com/data5/KD/HG/MY-46268905/fresh-pudina-500x500.png"
+
+
+        },
+        {
+            "id":8,
+            "name":"Lemon",
+            "price":40,
+            "color":"yellow",
+            "image":"https://www.salemmango.com/images/fresh-lemon.jpg"
+
+
+        },
+        {
+            "id":9,
+            "name":"Cabbage",
+            "price":30,
+            "color":"green",
+            "image":"https://5.imimg.com/data5/SB/MJ/MY-55971289/garden-fresh-cabbage-gobhee-500x500.png"
+
+
+        },
+        {
+            "id":10,
+            "name":"Peas",
+            "price":15,
+            "color":"green",
+            "image":"https://5.imimg.com/data5/LZ/GY/DV/SELLER-19082060/green-peas-500x500.jpg"
+
+
+        }
+    ]
+}
