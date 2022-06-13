@@ -14,8 +14,10 @@ class HomeDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: "Know Farming".text.make().px64(),
+        backgroundColor: Colors.green,
         iconTheme: IconThemeData(
-          color: Colors.black,
+          color: Color.fromARGB(255, 255, 255, 255),
         ),
       ),
       backgroundColor: Color.fromARGB(255, 244, 255, 242),
@@ -32,8 +34,8 @@ class HomeDetailPage extends StatelessWidget {
                   backgroundColor: MaterialStateProperty.all(
                       Color.fromARGB(255, 58, 163, 62)),
                   shape: MaterialStateProperty.all(StadiumBorder())),
-              child: "Buy".text.make(),
-            ).wh(100, 50)
+              child: "Add to Cart".text.make(),
+            ).wh(120, 50)
           ],
         ).p32(),
       ),
@@ -63,6 +65,13 @@ class HomeDetailPage extends StatelessWidget {
                           .color(Colors.white)
                           .make(),
                       10.heightBox,
+                      "Yet wandering my a my it or the. There said a adore the loneliness lattice god. Nothing though kind being core raven, grave chamber louder divining by name. Linking above pallas fowl beak some, lenore outpour the being sitting grew with a to tempest, nothing this divining while within rustling."
+                          .text
+                          .textStyle(context.captionStyle)
+                          .color(Colors.white)
+                          .size(12)
+                          .make()
+                          .p16()
                     ],
                   ).py32(),
                 ),
